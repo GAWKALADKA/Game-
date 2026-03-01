@@ -303,6 +303,22 @@
         .hidden {
             display: none;
         }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .form-card, .about-card {
+                padding: 25px;
+            }
+            
+            .nav-btn {
+                padding: 10px 20px;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -402,7 +418,7 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://wa.me/" class="social-link whatsapp" target="_blank">💬</a>
+                        <a href="https://wa.me/917520947031" class="social-link whatsapp" target="_blank">💬</a>
                         <a href="https://github.com/" class="social-link github" target="_blank">🐙</a>
                     </div>
                 </div>
@@ -415,8 +431,8 @@
     </footer>
 
     <script>
-        // WhatsApp Number - YEH APNA NUMBER DALEN
-        const OWNER_WHATSAPP = "+917009373977"; // Apna number yahan likhein
+        // ======== YOUR WHATSAPP NUMBER ========
+        const OWNER_WHATSAPP = "+917520947031";
 
         // Section Toggle
         function showSection(sectionId) {
@@ -450,7 +466,7 @@
             const encodedMessage = encodeURIComponent(message);
             
             // Open WhatsApp with pre-filled message
-            window.open(`https://wa.me/7520947031?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/${OWNER_WHATSAPP}?text=${encodedMessage}`, '_blank');
 
             // Reset form
             this.reset();
@@ -459,4 +475,4 @@
         });
     </script>
 </body>
-  </html>
+    </html>
